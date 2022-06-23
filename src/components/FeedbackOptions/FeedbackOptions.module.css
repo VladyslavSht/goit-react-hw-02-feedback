@@ -11,4 +11,5 @@
   font-size: 20px;
   background-color: aqua;
   border: 2px solid rgb(203, 255, 120);
+  cursor: pointer;
 }
