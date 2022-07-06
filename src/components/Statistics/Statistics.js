@@ -1,21 +1,16 @@
 import PropTypes from 'prop-types';
-import Notification from '../Notification/Notification';
 import s from './Statistics.module.css';
 function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <div>
       <h2 className={s.header}>Statistics</h2>
-      {total === 0 ? (
-        <Notification />
-      ) : (
-        <ul className={s.list}>
-          <li>Good: {good}</li>
-          <li>Neutral: {neutral}</li>
-          <li>Bad: {bad}</li>
-          <li>Total: {total}</li>
-          <li>Positive feedback: {positivePercentage}%</li>
-        </ul>
-      )}
+      <ul className={s.list}>
+        <li>Good: {good}</li>
+        <li>Neutral: {neutral}</li>
+        <li>Bad: {bad}</li>
+        <li>Total: {total}</li>
+        <li>Positive feedback: {positivePercentage}%</li>
+      </ul>
     </div>
   );
 }
